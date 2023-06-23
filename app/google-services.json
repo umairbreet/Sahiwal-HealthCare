@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080895190645",
+    "project_id": "sahiwal-healthcare-b0287",
+    "storage_bucket": "sahiwal-healthcare-b0287.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080895190645:android:2b224e4841528f9dcdea3c",
+        "android_client_info": {
+          "package_name": "com.example.sahiwalhealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080895190645-87u9hnu0317nvvs4go82i1sm41nierdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfOf6wH64PCJQTNgceqBAnt0f591dRVAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080895190645-87u9hnu0317nvvs4go82i1sm41nierdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

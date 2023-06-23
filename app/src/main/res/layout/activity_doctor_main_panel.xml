@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorMainPanel">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_140sdp"
+        app:cardElevation="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+    <ImageView
+        android:id="@+id/clinicPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:background="@drawable/hospital"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/clinicT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/mainImage"
+        android:layout_margin="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/clinicTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:gravity="center_horizontal"
+            android:text="Title"
+            android:textColor="#245B71"
+            android:shadowRadius="6"
+            android:shadowDy="3"
+            android:shadowColor="#CD191818"
+            android:textSize="@dimen/_23ssp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/doctorImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/clinicT"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardElevation="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        >
+        <ImageView
+            android:id="@+id/dctrimg"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/doctormain"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@+id/clinicT"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/doctorImage"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/addresses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/aldrich"
+            android:padding="@dimen/_5sdp"
+            android:text="Address"
+            android:textColor="#E41E1D1D"
+            android:textSize="@dimen/_10ssp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_toRightOf="@+id/doctorImage"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        app:cardElevation="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        >
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addresses"
+            android:layout_toRightOf="@id/doctorImage"
+            android:text="Sahiwal "
+            android:textColor="#E9222121"
+            android:fontFamily="@font/aldrich"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_5sdp"
+            />
+        <TextView
+            android:id="@+id/zipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_toRightOf="@id/city"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:text="570000"
+            android:textColor="#E6232323"
+            android:fontFamily="@font/aldrich"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_5sdp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/doctorT"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/doctorImage"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:cardElevation="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        >
+
+        <TextView
+            android:id="@+id/doctorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:shadowColor="#CD191818"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:text="doctorname"
+            android:textColor="#245B71"
+            android:textSize="@dimen/_10ssp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/blankviews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_below="@+id/doctorT"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/docfeeimage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/doctorfee" />
+
+            <TextView
+                android:id="@+id/fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="1000"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:textColor="#020202"
+                android:textSize="@dimen/_13ssp" />
+
+            <ImageView
+                android:id="@+id/timeImage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/doctortime" />
+
+            <TextView
+                android:id="@+id/opentime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="10:00AM"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="To"
+                android:textColor="#E11212"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/closeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="10:00AM"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/blanspe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blankviews"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_15sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/spe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specialist: "
+            android:background="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/aldrich"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/skill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Heart"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/aldrich"
+            android:textColor="#E2191717"
+            android:shadowRadius="6"
+            android:shadowDy="3"
+            android:textStyle="bold"
+            android:shadowColor="#E41B1919"
+            />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blanspe"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_15sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No:"
+                android:textSize="@dimen/_11ssp"
+                android:padding="@dimen/_10sdp"
+                android:background="@color/black"
+                android:fontFamily="@font/aldrich"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="12345678901"
+                android:textSize="@dimen/_13ssp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/aldrich"
+                android:textColor="#E2272727"
+                android:shadowRadius="3"
+                android:shadowDy="2"
+                android:textStyle="bold"
+                android:shadowColor="#E41B1919"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_40sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/updateDoc"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/btn2"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/aldrich"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:shadowColor="#E1191818"
+                android:soundEffectsEnabled="true"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+            <Button
+                android:id="@+id/deleteDoc"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/btn2"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/aldrich"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:shadowColor="#E1191818"
+                android:soundEffectsEnabled="true"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

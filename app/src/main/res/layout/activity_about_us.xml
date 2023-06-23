@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutUs">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_165sdp"
+                android:layout_height="@dimen/_140sdp"
+                android:background="@drawable/uosahiwal"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_100sdp"
+                app:cardElevation="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp">
+            <ImageView
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_145sdp"
+                    android:background="@drawable/uosahiwal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3sdp"/>
+            </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_15sdp"
+                    android:text="Sahiwal HealthCare Application is officialy developed by Universty of Sahiwal student. This Application is submitted as a Final Year Project to Computer Science department by IT student. Sahiwal HealthCare developed for those who don't know the schedules, locations and fees of private and official clinic and pharmacies. Sahiwal HealthCare help people to get appointments easly and direct communication. Clinics and pharmacies official contact numbers are available on this app. Sahiwal HealthCare app will be very useful and it will save your precious time"
+                    android:justificationMode="inter_word"
+                    android:textSize="@dimen/_16ssp"
+                    android:fontFamily="@font/aldrich"
+                    android:textColor="#F5393737"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Copyrights © UOSahiwal"
+                    android:textAlignment="center"
+                    />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

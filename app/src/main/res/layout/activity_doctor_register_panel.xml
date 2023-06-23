@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DoctorRegisterPanel">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:backgroundTint="#49B0C1"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="#49B0C1"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@dimen/_30sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register Clinic"
+            android:textSize="@dimen/_23ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/aldrich"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_20sdp">
+            <ProgressBar
+                android:id="@+id/progressBarAdminr"
+                android:visibility="gone"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:background="@drawable/adminloginprogressbar"
+                android:layout_gravity="center"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2"
+                        android:rowCount="2"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Clinic"
+                            android:textSize="@dimen/_15ssp"
+                            android:fontFamily="@font/aldrich"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Doctor"
+                            android:textSize="@dimen/_15ssp"
+                            android:fontFamily="@font/aldrich"
+                            />
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/selectClinicImage"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            app:cardElevation="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_100sdp"
+                            android:soundEffectsEnabled="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/clinicImage"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/uploadimage"/>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/selectDoctorImage"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            app:cardElevation="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_100sdp"
+                            android:soundEffectsEnabled="true"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/docImage"
+                                android:layout_gravity="center"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:src="@drawable/uploadimage"/>
+                        </androidx.cardview.widget.CardView>
+                    </GridLayout>
+                    <EditText
+                        android:id="@+id/edtClinicName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Clinic name"
+                        android:inputType="textPersonName"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/clncname"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Official email"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/useredt"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtDoctorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Doctor name"
+                        android:inputType="textPersonName"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/dctrname"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtDoctorContact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Contact No"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/mobile"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtDoctorCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter City name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/cite"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtDoctorZipcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Zip Code"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/cite"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <EditText
+                        android:id="@+id/edtDoctorAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Enter Complete address"
+                        android:inputType="textPostalAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/locate"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <Spinner
+                        android:id="@+id/edtDoctorSpecialization"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:spinnerMode="dropdown"
+                        />
+
+                    <EditText
+                        android:id="@+id/edtDoctorFees"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/edit"
+                        android:hint="Appointment Fees"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="#020B2C"
+                        android:textColorHighlight="#E908E4DD"
+                        android:textSize="@dimen/_13ssp"
+                        android:drawableLeft="@drawable/money"
+                        android:drawablePadding="@dimen/_6sdp"/>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:columnCount="2"
+                        android:rowCount="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_3sdp"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:soundEffectsEnabled="true"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            >
+                            <TextView
+                                android:id="@+id/doctorOpeningTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:fontFamily="@font/fjalla_one"
+                                android:hint="Opening Time"
+                                android:textAlignment="center"
+                                android:shadowColor="#D2000000"
+                                android:shadowDy="3"
+                                android:shadowRadius="6"
+                                android:textColor="#104878"
+                                android:textSize="@dimen/_15ssp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_margin="@dimen/_3sdp"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            android:layout_gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:soundEffectsEnabled="true"
+                            android:foreground="?attr/selectableItemBackgroundBorderless"
+                            >
+                            <TextView
+                                android:id="@+id/doctorClosingTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:fontFamily="@font/fjalla_one"
+                                android:hint="Closing Time"
+                                android:textAlignment="center"
+                                android:shadowColor="#D2000000"
+                                android:shadowDy="3"
+                                android:shadowRadius="6"
+                                android:textColor="#104878"
+                                android:textSize="@dimen/_15ssp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+                <LinearLayout
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+
+
+                    >
+
+                    <Button
+                        android:id="@+id/btnDoctorSubmit"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:soundEffectsEnabled="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/btn2"
+                        android:text="Register"
+                        android:textSize="@dimen/_18ssp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        />
+                </LinearLayout>
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

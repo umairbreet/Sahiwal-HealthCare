@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SahiwalHealthCare"
+        tools:targetApi="31">
+        <activity
+            android:name=".Dentist"
+            android:exported="false" />
+        <activity
+            android:name=".Stomach"
+            android:exported="false" />
+        <activity
+            android:name=".Skin"
+            android:exported="false" />
+        <activity
+            android:name=".Psychiatrist"
+            android:exported="false" />
+        <activity
+            android:name=".Physciotherapist"
+            android:exported="false" />
+        <activity
+            android:name=".Physician"
+            android:exported="false" />
+        <activity
+            android:name=".Pediatric"
+            android:exported="false" />
+        <activity
+            android:name=".Kidney"
+            android:exported="false" />
+        <activity
+            android:name=".Immunologist"
+            android:exported="false" />
+        <activity
+            android:name=".Heart"
+            android:exported="false" />
+        <activity
+            android:name=".Gynecologist"
+            android:exported="false" />
+        <activity
+            android:name=".Eyes"
+            android:exported="false" />
+        <activity
+            android:name=".Ear"
+            android:exported="false" />
+        <activity
+            android:name=".Diabetes"
+            android:exported="false" />
+        <activity
+            android:name=".Cough"
+            android:exported="false" />
+        <activity
+            android:name=".Cancer"
+            android:exported="false" />
+        <activity
+            android:name=".Bones"
+            android:exported="false" />
+        <activity
+            android:name=".Asthma"
+            android:exported="false" />
+        <activity
+            android:name=".Liver"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorCatagories"
+            android:exported="false" />
+        <activity
+            android:name=".Pharmacy"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".HealthArticle"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacistMainPanel"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacistLogin"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorMainPanel"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLogin"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacistRegiterPanel"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorRegisterPanel"
+            android:exported="false" />
+        <activity
+            android:name=".PharmacistLoginPanel"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLoginPanel"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment"
+            android:exported="false" />
+        <activity
+            android:name=".chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".NextPageTw"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        </activity>
+        <activity
+            android:name=".SignUpLogin"
+            android:exported="false" />
+        <activity
+            android:name=".NextPageThree"
+            android:exported="false" />
+        <activity
+            android:name=".NextPageOne"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

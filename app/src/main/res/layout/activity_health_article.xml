@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HealthArticle"
+    >
+
+        <ImageView
+            android:id="@+id/backHealthArticle"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/baseline_arrow_back_24"
+            />
+
+        <ImageView
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/toolbar_back"
+            />
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSliders"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_marginTop="@dimen/_110sdp"
+            app:iss_auto_cycle="true"
+            app:iss_period="5000"
+            app:iss_delay="5000"
+            app:iss_corner_radius="20"
+            app:iss_title_background="@drawable/default_gradient"
+        />
+
+</RelativeLayout>
